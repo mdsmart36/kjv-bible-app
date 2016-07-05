@@ -10,6 +10,10 @@ namespace BuildKJVDataTable
     {
         static void Main(string[] args)
         {
+            SqlDataManager sdm = new SqlDataManager();
+            string filename = @"c:\Users\Matthew\Downloads\bible.txt\kjv-standard.txt";
+            // sdm.standardizeKjvText();
+            sdm.buildKjvTable(filename);
         }
     }
 }
